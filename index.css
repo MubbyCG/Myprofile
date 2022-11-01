@@ -38,46 +38,4 @@ main> .tagline{
     color:#FAFAFA;
 }
 
-.container{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow: hidden;
-}
-.bubbles{
-    position: relative;
-    display:flex;
-}
-.bubbles span
-{
-    position:relative;
-    width:30px;
-    height:30px;
-    background: #323536;
-    margin:0.4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #32353644,
-    0 0 50px #323536,
-    0 0 100px #323536;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(200s / var(--i))
-}
-.bubbles span:nth-child(even){
-    background: rgb(255, 225, 0);
-    box-shadow: 0 0 0 10px rgba(255, 255, 0, 0.274),
-    0 0 50px gold,
-    0 0 100px gold;
 
-}
-@keyframes animate
-{
-    0%
-    {
-        transform: translateY(100vh) scale(0);
-    }
-    100%
-    {
-        transform: translateY(-010vh) scale(1);
-    }
-    }
- 
